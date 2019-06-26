@@ -1,6 +1,7 @@
 package kitchen.products
 
 import kitchen.characteristics.{Ingredient, Size, Type}
+import kitchen.utilities.SequenceUtils
 
 case class PizzaFP (t:Type, s:Size, i:Seq[Ingredient]){
 
@@ -16,7 +17,10 @@ case class PizzaFP (t:Type, s:Size, i:Seq[Ingredient]){
     this.copy(s = newSize)
   }
 
-  def removeIngredient(i: Ingredient) = ???
+  def removeIngredient(removedIngredient: Ingredient) = {
+    val newIngredients = SequenceUtils.findElement(this.i, removedIngredient)
+    this.copy(i = newIngredients)
+  }
 
   def removeAllIngredients():PizzaFP = {
     this.copy(i = Seq[Ingredient]())
