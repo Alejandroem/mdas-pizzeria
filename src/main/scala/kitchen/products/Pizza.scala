@@ -1,5 +1,7 @@
 package kitchen.products
 
+import kitchen.characteristics.Ingredient
+
 import scala.collection.mutable.ArrayBuffer
 
 class Pizza {
@@ -10,5 +12,7 @@ class Pizza {
   def getSize = _size
   def getType = _type
   def getIngredients = _ingredients
+
+
 
 }
