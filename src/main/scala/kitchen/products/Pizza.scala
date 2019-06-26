@@ -13,6 +13,16 @@ class Pizza {
   def getType = _type
   def getIngredients = _ingredients
 
+  def addIngredient(i:Ingredient) = {
+    _ingredients += i
+  }
 
+  def removeIngredient(i: Ingredient) = {
+    _ingredients -= i
+  }
+
+  def resetPizza(): Unit ={
+    _ingredients.clear()
+  }
 
 }
