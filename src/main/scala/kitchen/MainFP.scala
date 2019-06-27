@@ -3,7 +3,7 @@ package kitchen
 import kitchen.characteristics.{Barbecue, Cheese, Chicken, Large, Medium, Onion, Original, Thick}
 import kitchen.products.PizzaFP
 
-object PrincipalFP extends App {
+object MainFP extends App {
 
   val margarita = PizzaFP(Medium, Original, Seq(Cheese, Onion))
 

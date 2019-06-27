@@ -3,7 +3,7 @@ package kitchen
 import kitchen.characteristics.{Cheese, Large, Onion, Thick}
 import kitchen.products.Pizza
 
-object Principal extends App {
+object Main extends App {
 
   val margarita = new Pizza
   margarita.addIngredient(Cheese)
