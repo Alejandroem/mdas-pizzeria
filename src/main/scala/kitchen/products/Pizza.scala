@@ -8,7 +8,7 @@ class Pizza {
 
   type Coste = BigDecimal
 
-  private var _size = Medium
+  private var _size:Size = Medium
   private var _type:Type = Normal
   private val _ingredients: ArrayBuffer[Ingredient] = ArrayBuffer[Ingredient]()
 
