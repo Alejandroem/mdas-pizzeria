@@ -1,6 +1,6 @@
 package kitchen
 
-import kitchen.characteristics.{Barbecue, Cheese, Chicken, Ingredient, Large, Medium, Normal, Onion, Original, Size, Small, Thick, Type}
+import kitchen.characteristics._
 
 object PriceProvider {
   def getIngredientPrice() : Map[Ingredient, Price] = {
