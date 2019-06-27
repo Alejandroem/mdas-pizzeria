@@ -1,6 +1,6 @@
 package kitchen
 
-import kitchen.characteristics.{Barbecue, Cheese, Chicken, Ingredient, Onion}
+import kitchen.characteristics.{Barbecue, Cheese, Chicken, Ingredient, Large, Medium, Normal, Onion, Original, Size, Small, Thick, Type}
 
 object PriceProvider {
   def getIngredientPrice() : Map[Ingredient, Price] = {
@@ -11,4 +11,21 @@ object PriceProvider {
       Barbecue -> BigDecimal(1)
     )
   }
+
+  def getSizePrice() : Map[Size, Price] = {
+    Map(
+      Small -> BigDecimal(1),
+      Medium -> BigDecimal(1),
+      Large -> BigDecimal(1)
+    )
+  }
+
+  def getTypePrice() : Map[Type, Price] = {
+    Map(
+      Original -> BigDecimal(1),
+      Normal -> BigDecimal(1),
+      Thick -> BigDecimal(1)
+    )
+  }
+
 }
