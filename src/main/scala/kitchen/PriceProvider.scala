@@ -1,6 +1,7 @@
 package kitchen
 
 import kitchen.characteristics._
+import kitchen.products.Pizza
 
 object PriceProvider {
   def getIngredientPrice() : Map[Ingredient, Price] = {
